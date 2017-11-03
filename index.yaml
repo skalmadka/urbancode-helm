@@ -2,11 +2,11 @@ apiVersion: v1
 entries:
   delivery-insights:
   - apiVersion: v1
-    created: 2017-11-03T15:07:46.538999934-04:00
+    created: 2017-11-03T15:56:58.127335804-04:00
     description: Deploys IBM UrbanCode Delivery Insights
-    digest: 9a5de79419ff2e786e1ac25487ef9c284fb0a4facd3204e409c24f257d2f0d2b
+    digest: b0f6286eb3bf2ae5df8902280a12590d6cf08396af60838bedb1918192f9bbc2
     name: delivery-insights
     urls:
     - delivery-insights-0.2.0.tgz
     version: 0.2.0
-generated: 2017-11-03T15:07:46.538549603-04:00
+generated: 2017-11-03T15:56:58.125070756-04:00
