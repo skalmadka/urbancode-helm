@@ -7,6 +7,6 @@ entries:
     digest: 026777b147ae00b39701cb6a8a74182ace829e8041b54da0b80c6f042d288927
     name: delivery-insights
     urls:
-    - delivery-insights-0.8.4.tgz
+    - https://raw.githubusercontent.com/skalmadka/delivery-insights-helm/master/delivery-insights-0.8.4.tgz
     version: 0.8.4
 generated: 2018-02-06T14:46:49.433712-05:00
