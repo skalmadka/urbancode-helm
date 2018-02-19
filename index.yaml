@@ -2,11 +2,11 @@ apiVersion: v1
 entries:
   delivery-insights:
   - apiVersion: v1
-    created: 2018-02-19T15:11:39.867767-05:00
+    created: 2018-02-19T15:59:21.476473-05:00
     description: Deploys IBM UrbanCode Delivery Insights
-    digest: c689136a4951beca218c67432d2ad37c24e74ba0822329b5ae9054fc338ae3e3
+    digest: f37dd7570ea6bfcd5b445a81d7a06c162103a8f4cee8179438b151a7f21925a0
     name: delivery-insights
     urls:
     - https://raw.githubusercontent.com/skalmadka/delivery-insights-helm/master/delivery-insights-0.8.12.tgz
     version: 0.8.12
-generated: 2018-02-19T15:11:39.867062-05:00
+generated: 2018-02-19T15:59:21.473902-05:00
