@@ -1,2 +1,2 @@
-# delivery-insights-helm
-IBM UrbanCode Delivery insights Helm chart for deploying on Kubernetes
+# urbancode-helm
+UrbanCode Velocity Helm chart for deploying on Kubernetes
