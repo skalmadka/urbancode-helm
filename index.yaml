@@ -2,11 +2,11 @@ apiVersion: v1
 entries:
   velocity:
   - apiVersion: v1
-    created: 2018-02-21T16:44:25.618218-05:00
+    created: 2018-02-21T17:14:04.610365-05:00
     description: Deploys UrbanCode Velocity
-    digest: e0910342105459c0a3d617161afee92b2e93b3bcf43dcf4a2e7269241bcb9fcf
+    digest: c4c1ba2acbb65613679a486f0c61d41439c4d184ae31588d723514662b27cf55
     name: velocity
     urls:
     - https://raw.githubusercontent.com/skalmadka/urbancode-helm/master/velocity-0.9.3.tgz
     version: 0.9.3
-generated: 2018-02-21T16:44:25.613184-05:00
+generated: 2018-02-21T17:14:04.609774-05:00
