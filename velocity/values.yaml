@@ -1,0 +1,54 @@
+# Default values for UrbanCode Velocity
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# Multiple replica not supported
+# replicaCount: 1
+
+# license: User must read the LICENSE.txt and set the value below to "accept".
+license: not-read
+
+# prefixname: A prefix to be added to all pods, services and ingress names.
+# prefixname is truncated to 20 characters
+prefixname: velocity
+
+# url: The URL that the users will use to access Velocity UI (excluding the port number).
+# url.protocol: Only http supported.
+# url.domain: This is usually the ingress host name or the hostname of your kubernetes master node.
+# If you have any reverse proxy in front of your kubernetes cluster, that becomes your domain.
+url:
+  protocol: http
+  domain: <sub.domain.com>
+
+# mongo.url: mongodb://<mongo-username>:<mongo-password>@<mongo-service-name/URL>:<mongo-port>/<database-name>
+mongo:
+  url: mongodb://<mongo-username>:<mongo-password>@<mongo-service-name/URL>:27017/<database-name>
+
+# encrypt.key: A unique id used to encrypt user names, email-id and tokens in mongoDB
+encrypt:
+  key: cc5d44bb-4203-4be0-883f-47b49efdf04c
+
+# adminpass: Admin user password
+adminpassword: admin
+
+# Image and Services configuration
+consumer:
+  image:
+    repository: skalmadka/consumer
+    tag: latest
+    pullPolicy: Always
+  service:
+    type: ClusterIP
+    externalPort: 6004
+
+ui:
+  image:
+    repository: skalmadka/ui
+    tag: latest
+    pullPolicy: Always
+  service:
+    type: ClusterIP
+    externalPort: 80
+
+# ingress: If you want ingress rules setup set to true, else false.
+ingress: true

@@ -1,0 +1,14 @@
+{{- if eq .Values.license "accept" }}
+  Next,
+  * Go to admin console and make sure an authentication mechanism is set up for users to login to.
+    Admin console URL : {{ template "velocity.ui.url" . }}/admin
+  * Admin username: admin, admin password: {{ .Values.adminpassword }} to login as administrator.
+
+  Troubleshooting:
+  - Make sure .Values.url.domain is set correctly to the URL that the users will use access Delivery Insights UI.
+  - If .Values.mongo.url is not set correctly, you should be able to see the error logs in the container logs for {{ .Values.ui.name }}.
+  - For logs, get the pod names for {{ template "velocity.consumer.name" . }} and {{ template "velocity.ui.name" . }} by running kubectl get pods.
+    Then run kubectl logs <pod name>
+{{- else }}
+  You have not accepted the license terms. Read LICENSE.txt and add "--set license=accept" as part of the helm install command.
+{{- end }}
