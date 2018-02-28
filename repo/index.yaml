@@ -7,6 +7,6 @@ entries:
     digest: 324daa63e779f1667f0c480e98c335bb0a96d9566abf408641a1a745d17da0a5
     name: velocity
     urls:
-    - https://raw.githubusercontent.com/skalmadka/urbancode-helm/master/velocity-0.9.4.tgz
+    - https://raw.githubusercontent.com/skalmadka/urbancode-helm/master/repo/velocity-0.9.4.tgz
     version: 0.9.4
 generated: 2018-02-22T10:24:49.135283-05:00

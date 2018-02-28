@@ -12,7 +12,7 @@ Velocity brings reporting and analytics dashboard for UrbanCode Deploy.
 1. Get the required helm charts.
 
   ```sh
-  $ helm repo add urbancode https://raw.githubusercontent.com/skalmadka/urbancode-helm/master
+  $ helm repo add urbancode https://raw.githubusercontent.com/skalmadka/urbancode-helm/master/repo
   $ helm fetch urbancode/velocity
   ```
 
