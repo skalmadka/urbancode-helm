@@ -24,7 +24,7 @@ spec:
           env:
             - name: MONGO_URL
               value: {{ .Values.mongo.url }}
-            - name: encrypt_key
+            - name: ENCRYPT_KEY
               value: {{ .Values.encrypt.key }}
             - name: CONSUMER_URL
               value: {{ template "velocity.consumer.url" . }}
