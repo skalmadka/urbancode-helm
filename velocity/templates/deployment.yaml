@@ -87,17 +87,17 @@ spec:
               value: {{ .Chart.Version }}
             - name: LICENSE
               value: {{ .Values.license }}
-          livenessProbe:
-            httpGet:
-              path: /velocity
-              port: 80
-            initialDelaySeconds: 30
-            timeoutSeconds: 3
-            periodSeconds: 10
-          readinessProbe:
-            httpGet:
-              path: /velocity
-              port: 80
-            initialDelaySeconds: 30
-            timeoutSeconds: 3
-            periodSeconds: 10
+          # livenessProbe:
+          #   httpGet:
+          #     path: /velocity
+          #     port: 80
+          #   initialDelaySeconds: 30
+          #   timeoutSeconds: 3
+          #   periodSeconds: 10
+          # readinessProbe:
+          #   httpGet:
+          #     path: /velocity
+          #     port: 80
+          #   initialDelaySeconds: 30
+          #   timeoutSeconds: 3
+          #   periodSeconds: 10
