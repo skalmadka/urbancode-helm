@@ -32,20 +32,20 @@ spec:
               value: {{ .Chart.Version }}
             - name: LICENSE
               value: {{ .Values.license }}
-          livenessProbe:
-            httpGet:
-              path: /ping
-              port: 6004
-            initialDelaySeconds: 15
-            timeoutSeconds: 2
-            periodSeconds: 5
-          readinessProbe:
-            httpGet:
-              path: /ping
-              port: 6004
-            initialDelaySeconds: 15
-            timeoutSeconds: 2
-            periodSeconds: 5
+          # livenessProbe:
+          #   httpGet:
+          #     path: /ping
+          #     port: 6004
+          #   initialDelaySeconds: 15
+          #   timeoutSeconds: 2
+          #   periodSeconds: 5
+          # readinessProbe:
+          #   httpGet:
+          #     path: /ping
+          #     port: 6004
+          #   initialDelaySeconds: 15
+          #   timeoutSeconds: 2
+          #   periodSeconds: 5
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
