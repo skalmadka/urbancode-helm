@@ -5,10 +5,11 @@
   * Admin username: admin, admin password: {{ .Values.adminpassword }} to login as administrator.
 
   Troubleshooting:
-  - Make sure .Values.url.domain is set correctly to the URL that the users will use access Delivery Insights UI.
-  - If .Values.mongo.url is not set correctly, you should be able to see the error logs in the container logs for {{ .Values.ui.name }}.
-  - For logs, get the pod names for {{ template "velocity.consumer.name" . }} and {{ template "velocity.ui.name" . }} by running kubectl get pods.
-    Then run kubectl logs <pod name>
+  - Run "kubectl get pods" and get the pod names for {{ template "velocity.ui.name" . }} and {{ template "velocity.consumer.name" . }}, then run "kubectl logs <pod-name>" to view the logs.
+  - If there was an error pulling the images you might have a network issue, make sure your cluster can pull images from docker-hub and try re-installing.
+  - If there is a MongoDB connection error, make sure you have your MongoDB up and accessible from the Kube cluster. This chart does NOT install MongoDB.
+  - Make sure url.domain in your values file is set correctly to the URL that the users will use access UrbanCode Velocity UI. This is usually the hostname of your Kube cluster.
+  - Make sure url.domain is set correctly in your values file. It is usually the ingress host name or the hostname of your Kube master node. If you have any reverse proxy in front of your Kube cluster, that becomes your domain. Do not use IP address.
 {{- else }}
   You have not accepted the license terms. Read LICENSE.txt and add "--set license=accept" as part of the helm install command.
 {{- end }}
