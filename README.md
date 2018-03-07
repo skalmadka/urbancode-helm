@@ -5,6 +5,7 @@ Velocity brings reporting and analytics dashboard for UrbanCode Deploy.
 ## Pre-requisite
 
 - Kubernetes 1.4+ with Beta APIs enabled
+- Helm v2.6  (version might vary, which ever is compatible with your Kuberetes cluster).
 - MongoDB with persistent volume. <https://github.com/kubernetes/charts/tree/master/stable/mongodb>
 
 ## Installing the Chart and images
