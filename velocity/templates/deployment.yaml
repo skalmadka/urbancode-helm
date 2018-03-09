@@ -30,8 +30,6 @@ spec:
               value: {{ template "velocity.consumer.url" . }}
             - name: VERSION
               value: {{ .Chart.Version }}
-            - name: LICENSE
-              value: {{ .Values.license }}
           # livenessProbe:
           #   httpGet:
           #     path: /ping
@@ -85,11 +83,11 @@ spec:
               value: {{ .Values.adminpassword }}
             - name: VERSION
               value: {{ .Chart.Version }}
-            - name: LICENSE
-              value: {{ .Values.license }}
+            - name: LICENSE_KEY
+              value: {{ .Values.license.key }}
           # livenessProbe:
           #   httpGet:
-          #     path: /velocity
+          #     path: /home
           #     port: 80
           #   initialDelaySeconds: 30
           #   timeoutSeconds: 3

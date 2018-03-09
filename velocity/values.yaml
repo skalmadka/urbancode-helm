@@ -5,8 +5,9 @@
 # Multiple replica not supported
 # replicaCount: 1
 
-# license: User must read the LICENSE.txt and set the value below to "accept".
-license: not-read
+# license.key: Your Velocity registration key
+license:
+  key: <velocity-license-key>
 
 # prefixname: A prefix to be added to all pods, services and ingress names.
 # prefixname is truncated to 20 characters
@@ -48,7 +49,7 @@ ui:
     pullPolicy: Always
   service:
     type: ClusterIP
-    externalPort: 80
+    externalPort: 6005
 
 # ingress: If you want ingress rules setup set to true, else false.
 ingress: true
